@@ -1,5 +1,7 @@
 name: jerry 
 job: 
-build:
+push: "main"
+on:/
+
 
   run-on: window-latest
