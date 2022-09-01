@@ -1,7 +1,17 @@
 name: jerry 
 job: 
 push: "main"
-on:/
+on:./site
 
 
-  run-on: window-latest
+ - run-on: window-latest
+
+ steps:
+     name: Checkout   
+       on: action-checkout@v1
+      
+    - name: Upload a Build Artifact
+  uses: actions/upload-artifact@v3.1.0
+  with: *
+ path: ./
+  warn: 
