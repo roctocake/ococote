@@ -1,10 +1,10 @@
 name: jerry 
 job: 
 push: "main"
-on:./site
+on: "*"
 
 
- - run-on: window-latest
+  - run-on: window-latest
 
  steps:
      name: Checkout   
