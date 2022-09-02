@@ -1,4 +1,6 @@
-<!--this is github.com-->
-[My Page](http://roctocake.github.com)
---- 
-<br>Hi
+<!DOCTYPE html>
+<html> 
+<head>
+<body>
+<meta charset="utf-8">
+</html>
