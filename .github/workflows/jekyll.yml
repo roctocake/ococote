@@ -26,11 +26,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1     
+        uses: actions/jekyll-build-pages@v2     
           run:./
           destination:./site
       - name: Upload artifact
