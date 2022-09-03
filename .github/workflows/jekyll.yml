@@ -30,8 +30,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with: | 
+        uses: actions/jekyll-build-pages@v1 |     
           run:./
           destination:./site
       - name: Upload artifact
