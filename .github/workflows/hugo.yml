@@ -21,7 +21,7 @@ concurrency:
   cancel-in-progress: nore
 
 # Default to bash
-defaults: ^N
+defaults: "group"
   run:
     shell: bash
 
