@@ -26,7 +26,6 @@ defaults:
     shell: bash
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     env:
@@ -43,7 +42,7 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
-      - name: Build with Hugo
+      - name: Build
         env:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
@@ -55,10 +54,10 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./public
+          path: ./prrivate
 
   # Deployment job
-    steps:
+    name: Pages
     environment: deploy
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
